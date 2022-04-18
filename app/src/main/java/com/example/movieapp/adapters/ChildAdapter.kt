@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.movieapp.R
 import com.example.movieapp.data.Movie
 
-class ChildAdapter(val childData: List<Movie>) : RecyclerView.Adapter<ChildAdapter.ViewHolder>() {
+class ChildAdapter(private val childData: List<Movie>) : RecyclerView.Adapter<ChildAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context).inflate(R.layout.child_item, parent, false)

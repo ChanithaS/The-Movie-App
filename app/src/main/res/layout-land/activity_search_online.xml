@@ -5,61 +5,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#11111B"
-    tools:context=".SearchActorActivity">
+    tools:context=".SearchOnlineActivity">
 
     <Button
-        android:id="@+id/searchBtn"
+        android:id="@+id/searchBtnOnline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NameEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/movieSearchOnline" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/parentRecycleView"
+        android:id="@+id/recycleViewOnline"
         android:layout_width="390dp"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/searchBtnOnline" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="286dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/favourite_actor"
+        android:id="@+id/header"
+        android:layout_width="216dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/find_movies_online"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <SearchView
-        android:id="@+id/NameEditText"
-        android:background="@drawable/boarder_round"
+        android:id="@+id/movieSearchOnline"
         android:layout_width="361dp"
         android:layout_height="46dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="1dp"
+        android:background="@drawable/boarder_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/header" />
 
     <ImageView
-        android:id="@+id/actorNotFound"
-        android:layout_width="157dp"
-        android:layout_height="177dp"
-        android:layout_marginTop="156dp"
+        android:id="@+id/movieNotFound"
+        android:layout_width="163dp"
+        android:layout_height="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchBtn"
+        app:layout_constraintTop_toBottomOf="@+id/searchBtnOnline"
+        app:layout_constraintVertical_bias="0.459"
         app:srcCompat="@drawable/not_found_mg" />
 
 

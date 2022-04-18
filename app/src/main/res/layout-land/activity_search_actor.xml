@@ -17,6 +17,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/NameEditText" />
 
+    <ImageView
+        android:id="@+id/actorNotFound"
+        android:layout_width="154dp"
+        android:layout_height="189dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBtn"
+        app:srcCompat="@drawable/not_found_mg" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/parentRecycleView"
         android:layout_width="390dp"
@@ -29,38 +40,27 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="286dp"
+        android:layout_width="454dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:text="@string/favourite_actor"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <SearchView
         android:id="@+id/NameEditText"
-        android:background="@drawable/boarder_round"
         android:layout_width="361dp"
         android:layout_height="46dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="1dp"
+        android:background="@drawable/boarder_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <ImageView
-        android:id="@+id/actorNotFound"
-        android:layout_width="157dp"
-        android:layout_height="177dp"
-        android:layout_marginTop="156dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchBtn"
-        app:srcCompat="@drawable/not_found_mg" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

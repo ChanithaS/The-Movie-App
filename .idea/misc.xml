@@ -5,11 +5,20 @@
       <map>
         <entry key="app/src/main/res/drawable/boarder_round.xml" value="0.3165" />
         <entry key="app/src/main/res/drawable/layout_round.xml" value="0.216" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.28268432617187517" />
-        <entry key="app/src/main/res/layout/activity_search_actor.xml" value="0.32653638346501335" />
-        <entry key="app/src/main/res/layout/activity_search_movie.xml" value="0.25439758300781246" />
-        <entry key="app/src/main/res/layout/child_item.xml" value="0.1658462524414063" />
-        <entry key="app/src/main/res/layout/list_item.xml" value="0.27145538330078134" />
+        <entry key="app/src/main/res/drawable/top_boarder.xml" value="0.321" />
+        <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.2553180163079048" />
+        <entry key="app/src/main/res/layout-land/activity_search_actor.xml" value="0.30981783320243617" />
+        <entry key="app/src/main/res/layout-land/activity_search_movie.xml" value="0.239053673046186" />
+        <entry key="app/src/main/res/layout-land/activity_search_online.xml" value="0.26940035273368607" />
+        <entry key="app/src/main/res/layout-land/list_item.xml" value="0.26940035273368607" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2961456298828127" />
+        <entry key="app/src/main/res/layout/activity_search_actor.xml" value="0.31632167313165444" />
+        <entry key="app/src/main/res/layout/activity_search_movie.xml" value="0.24979858398437482" />
+        <entry key="app/src/main/res/layout/activity_search_online.xml" value="0.2601587961199141" />
+        <entry key="app/src/main/res/layout/child_item.xml" value="0.4173745854948435" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.2023529411764706" />
+        <entry key="app/src/main/res/layout/movieItem.xml" value="0.28351449275362317" />
+        <entry key="app/src/main/res/layout/movie_item.xml" value="0.28971710205078127" />
       </map>
     </option>
   </component>
@@ -18,5 +27,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.32653638346501335" />
+      </ProjectState>
+    </option>
   </component>
 </project>

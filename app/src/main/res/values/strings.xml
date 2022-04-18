@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Movie App</string>
+    <string name="search">Search</string>
+    <string name="favourite_actor">Find all the movies of your favourite Actor,</string>
+    <string name="retrieve_movie">Retrieve Movie</string>
+    <string name="save_movie_to_database">Save movie to Database</string>
+    <string name="favourite_movie">Find your favourite movie and save it to your Database,</string>
+    <string name="add_movies_to_db">Add Movies to DB</string>
+    <string name="search_for_movies">Search for Movies</string>
+    <string name="search_for_actors">Search for Actors</string>
+    <string name="welcome">Welcome to your movie Database</string>
+    <string name="featured_series">Featured Series</string>
+    <string name="search_online">SEARCH FOR MOVIES ONLINE</string>
+    <string name="find_movies_online">Find Movies Online,</string>
+    <string name="line">-------------------------------------------------------------------------</string>
 </resources>
