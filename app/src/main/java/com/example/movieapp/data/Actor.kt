@@ -5,5 +5,6 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "actor_table")
 data class Actor(
+    //table which contain all the actors .. with primary key as actor name
     @PrimaryKey val actor_name: String,
 )

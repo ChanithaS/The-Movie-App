@@ -8,6 +8,7 @@ import androidx.room.RoomDatabase
 @Database(entities = [Movie::class, Actor::class, ActorMovieCrossRef::class], version = 1)
 abstract class MovieDatabase: RoomDatabase(){
 
+    //offer abstract access to app's database.
     abstract fun movieDao(): MovieDao
 
     companion object{

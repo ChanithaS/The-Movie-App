@@ -5,6 +5,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "movie_table")
 data class Movie(
+    //table which holds all the data of the movie
     @PrimaryKey val Title: String,
     val Year: String,
     val Rated: String,
