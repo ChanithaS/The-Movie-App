@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieApp">
         <activity
+            android:name=".SearchActorActivity"
+            android:exported="false" />
+        <activity
             android:name=".SearchMovieActivity"
             android:exported="false" />
         <activity

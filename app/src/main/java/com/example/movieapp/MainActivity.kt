@@ -13,19 +13,17 @@ import kotlinx.coroutines.runBlocking
 class MainActivity : AppCompatActivity() {
     private lateinit var movieDao: MovieDao
     private lateinit var text: TextView
-    private var count = 5
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        text = findViewById<TextView>(R.id.textView)
 
         val db = Room.databaseBuilder(this, MovieDatabase::class.java, "mydatabase").build()
         movieDao = db.movieDao()
 
         val addToDB = findViewById<Button>(R.id.addMovieBtn)
         val searchMovie = findViewById<Button>(R.id.searchMovieBtn)
+        val searchActorData = findViewById<Button>(R.id.searchActorsBtn)
 
         addToDB.setOnClickListener {
             addData()
@@ -34,6 +32,10 @@ class MainActivity : AppCompatActivity() {
         searchMovie.setOnClickListener {
             val searchMovies = Intent(this, SearchMovieActivity::class.java)
             startActivity(searchMovies)
+        }
+        searchActorData.setOnClickListener {
+            val searchActor = Intent(this, SearchActorActivity::class.java)
+            startActivity(searchActor)
         }
     }
 
@@ -129,10 +131,10 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                val movies: List<Movie> = movieDao.readData()
-                for (u in movies) {
-                    text.append("\n ${u.Title} ${u.Year}")
-                }
+//                val movies: List<Movie> = movieDao.readData()
+//                for (u in movies) {
+//                    text.append("\n ${u.Title} ${u.Year}")
+//                }
 
             }
         }

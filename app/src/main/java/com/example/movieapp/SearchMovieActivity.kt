@@ -58,7 +58,7 @@ class SearchMovieActivity : AppCompatActivity() {
 //        val movieName = "matrix"
         // collecting all the JSON string
         var stb = StringBuilder("")
-        val urlString = "https://www.omdbapi.com/?t=$name&apikey=ff95b66";
+        val urlString = "https://www.omdbapi.com/?t=$name&apikey=1ef0b74d";
         val url = URL(urlString)
         val con: HttpURLConnection = url.openConnection() as HttpURLConnection
 

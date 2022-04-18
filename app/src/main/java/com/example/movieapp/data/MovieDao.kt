@@ -21,5 +21,5 @@ interface MovieDao {
 
     @Transaction
     @Query("SELECT * FROM actor_table WHERE actor_name LIKE '%' || :key_Word || '%'")
-    fun getMovies(key_Word:String): List<ActorWithMovies>
+    fun getActorMovies(key_Word:String): List<ActorWithMovies>
 }
